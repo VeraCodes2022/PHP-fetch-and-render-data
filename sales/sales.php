@@ -24,9 +24,9 @@ require './conn.php';
 $read=mysqli_query($link,'select * from sales');
 $list=mysqli_fetch_all($read,MYSQLI_ASSOC);
 
-// 销毁结果集 destroy the result 
+// destroy the result 
 mysqli_free_result($read);
-// 关闭连接 close link 
+// close link 
 mysqli_close($link);
 
 
